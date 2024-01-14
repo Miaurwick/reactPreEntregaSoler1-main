@@ -1,0 +1,12 @@
+#carrito {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-left: 3px;
+  left: 90vh;
+}
+
+#carrito p {
+  margin: 0;
+  padding-left: 10px;
+}
