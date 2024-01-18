@@ -11,6 +11,12 @@ body {
   color: purple;
 }
 
+.navBarLink{
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+}
+
 .estaciones {
   padding-right: 20px;
   padding-top: 0px;

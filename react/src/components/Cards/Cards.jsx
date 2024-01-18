@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import ListGroup from "react-bootstrap/ListGroup";
 import "./Cards.css";
 
 const Cards = () => {
@@ -13,6 +14,9 @@ const Cards = () => {
           <Card.Text className="texto-card">
             Añade un toque punzante y maravilloso a los platos.
           </Card.Text>
+          <ListGroup variant="flush">
+            <ListGroup.Item className="precio-producto-card">$ 10 USD</ListGroup.Item>
+          </ListGroup>
           <Button variant="primary">Conoce más </Button>
         </Card.Body>
       </Card>
@@ -24,6 +28,9 @@ const Cards = () => {
           <Card.Text className="texto-card">
             Un tubérculo de primavera primo hermano de la zanahoria.
           </Card.Text>
+          <ListGroup variant="flush">
+            <ListGroup.Item className="precio-producto-card">$ 15 USD</ListGroup.Item>
+          </ListGroup>
           <Button variant="primary">Conoce más </Button>
         </Card.Body>
       </Card>
@@ -35,6 +42,9 @@ const Cards = () => {
           <Card.Text className="texto-card">
             Valiosa, pero de crecimiento lento y de vuenos nutrientes.
           </Card.Text>
+          <ListGroup variant="flush">
+            <ListGroup.Item className="precio-producto-card">$ 45 USD</ListGroup.Item>
+          </ListGroup>
           <Button variant="primary">Conoce más </Button>
         </Card.Body>
       </Card>
@@ -46,6 +56,9 @@ const Cards = () => {
           <Card.Text className="texto-card">
             Una fruta dulce, jugosa y de atractivo color rojo, muy apreciada.
           </Card.Text>
+          <ListGroup variant="flush">
+            <ListGroup.Item className="precio-producto-card">$ 30 USD</ListGroup.Item>
+          </ListGroup>
           <Button variant="primary">Conoce más </Button>
         </Card.Body>
       </Card>
@@ -57,6 +70,9 @@ const Cards = () => {
           <Card.Text className="texto-card">
             Plántalo en verano para tener un cafeto.
           </Card.Text>
+          <ListGroup variant="flush">
+            <ListGroup.Item className="precio-producto-card">$ 25 USD</ListGroup.Item>
+          </ListGroup>
           <Button variant="primary">Conoce más </Button>
         </Card.Body>
       </Card>
@@ -68,6 +84,9 @@ const Cards = () => {
           <Card.Text className="texto-card">
             Un tubérculo cultivado en muchas zonas.
           </Card.Text>
+          <ListGroup variant="flush">
+            <ListGroup.Item className="precio-producto-card">$ 18 USD</ListGroup.Item>
+          </ListGroup>
           <Button variant="primary">Conoce más </Button>
         </Card.Body>
       </Card>

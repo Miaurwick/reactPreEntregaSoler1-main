@@ -5,33 +5,32 @@ import React from "react";
 import "./NavBar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import CartWidget from "../CarritoCartWidget/CartWidget";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
     <div id="container">
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container>
-          <Navbar.Brand id="brand" href="">
-            Maldad Miaulactica 🌌
+          <Navbar.Brand id="brand" to="">
+            <Link  className="navBarLink" to="/" >Maldad Miaulactica 🌌</Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="estaciones me-auto">
-              <Nav.Link id="primavera" href="#primavera">
+              <Link  className="navBarLink" id="primavera" to="/categoria/primavera">
                 Primavera
-              </Nav.Link>
-              <Nav.Link id="verano" href="#verano">
+              </Link>
+              <Link className="navBarLink" id="verano" to="/categoria/verano">
                 Verano
-              </Nav.Link>
-              <Nav.Link id="otonio" href="#otonio">
+              </Link>
+              <Link className="navBarLink" id="otonio" to="/categoria/otoño">
                 Otoño
-              </Nav.Link>
-              <Nav.Link id="invierno" href="#otonio">
+              </Link>
+              <Link className="navBarLink" id="invierno" to="/categoria/invierno"> 
                 Invierno
-              </Nav.Link>
-              <Nav.Link id="otonio" href="#otonio">
+              </Link>
                 <CartWidget contador={"(1)"} />
-              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
