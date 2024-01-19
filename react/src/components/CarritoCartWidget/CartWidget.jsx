@@ -4,7 +4,7 @@ import "./CartWidget.css";
 const cartWidget = ({ contador }) => {
   return (
     <div id="carrito">
-      <img src="./src/assets/Coffee.ico" alt="iconoCarrito" />
+      <img src="./public/img/Coffee.ico" alt="iconoCarrito" />
       <p>{contador}</p>
     </div>
   );

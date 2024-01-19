@@ -1,17 +1,22 @@
-import React from "react";
+import React, { useState,useEffect } from "react";
 import "./ItemListContainer.css";
-import Cards from "../Cards/Cards";
-import { useParams } from "react-router-dom";
+import obtenerProductos from "../Data/Data";
+import ItemList from "../ItemList/ItemList";
 
 const ItemListContainer = ({ bienvenida }) => {
-  
-  const {categoria} = useParams()
-  
+  const [productos, setProductos] = useState([]);
 
+  useEffect(() => {
+    obtenerProductos
+    .then((respuesta) =>  {
+      setProductos(respuesta)
+    })
+  }, [])
+  
   return (
     <div className="bienvenidaBody">
       <h2>{bienvenida}</h2>
-      <Cards/>
+      <ItemList productos={productos} />
     </div>
   );
 };
