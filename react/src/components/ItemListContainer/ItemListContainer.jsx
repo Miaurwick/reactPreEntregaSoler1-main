@@ -3,6 +3,7 @@ import "./ItemListContainer.css";
 import obtenerProductos from "../Data/Data";
 import ItemList from "../ItemList/ItemList";
 import { useParams } from "react-router-dom";
+import ItemDetail from "../ItemDetail/ItemDetail";
 
 const ItemListContainer = ({ bienvenida }) => {
   const [productos, setProductos] = useState([]);
@@ -24,6 +25,7 @@ const ItemListContainer = ({ bienvenida }) => {
     <div className="bienvenidaBody">
       <h2>{bienvenida}</h2>
       <ItemList productos={productos} />
+      <ItemDetail/>
     </div>
   );
 };
