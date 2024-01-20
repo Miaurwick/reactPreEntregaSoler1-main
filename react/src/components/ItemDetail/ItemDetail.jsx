@@ -3,9 +3,7 @@ import React from "react";
 const ItemDetail = ({producto}) => {
   return (
     <div>
-       <img src={producto.imagen} alt={producto.nombre} />
-       <p>{producto.nombre} </p>
-       <p>{producto.precio} </p>
+       <img src="../public/img/Semillas_de_ajo.png"/>
     </div>
   )
 }
