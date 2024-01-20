@@ -18,16 +18,16 @@ const NavBar = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="estaciones me-auto">
-              <Link  className="navBarLink" id="primavera" to="/categoria/primavera">
+              <Link  className="navBarLink"  to="/categoria/primavera">
                 Primavera
               </Link>
-              <Link className="navBarLink" id="verano" to="/categoria/verano">
+              <Link className="navBarLink"  to="/categoria/verano">
                 Verano
               </Link>
-              <Link className="navBarLink" id="otonio" to="/categoria/otoño">
+              <Link className="navBarLink"  to="/categoria/otoño">
                 Otoño
               </Link>
-              <Link className="navBarLink" id="invierno" to="/categoria/invierno"> 
+              <Link className="navBarLink"  to="/categoria/invierno"> 
                 Invierno
               </Link>
                 <CartWidget contador={"(1)"} />

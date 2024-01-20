@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const ItemDetail = ({producto}) => {
   return (
     <div>
-        <img  src={producto.img}  alt={producto.nombre}/>
-        <p>{producto.nombre}</p>
-        <p>{producto.precio} </p>
+       <img src={producto.imagen} alt={producto.nombre} />
+       <p>{producto.nombre} </p>
+       <p>{producto.precio} </p>
     </div>
   )
 }
