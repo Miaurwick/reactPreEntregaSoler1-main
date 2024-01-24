@@ -10,7 +10,7 @@ const ItemDetailContainer = () => {
   useEffect(() => {
     obtenerProductos
       .then((respuesta) => {
-        const filtro = respuesta.find((producto) => producto.id === idProducto);
+        const filtro = respuesta.find((producto) => producto.id === Number(idProducto));
         setProducto(filtro);
       })
   }, [idProducto])

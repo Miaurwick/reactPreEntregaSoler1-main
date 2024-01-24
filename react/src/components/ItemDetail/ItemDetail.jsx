@@ -1,9 +1,10 @@
 import React from "react";
 
 const ItemDetail = ({producto}) => {
+    console.log(producto)
   return (
     <div>
-       <img src="../public/img/Semillas_de_ajo.png"/>
+      <p>{producto.nombre}</p>
     </div>
   )
 }
