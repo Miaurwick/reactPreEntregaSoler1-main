@@ -15,6 +15,7 @@ function App() {
   <Route  path="/" element={<ItemListContainer />} />
   <Route path="/categoria/:categoria" element={<ItemListContainer />} />
   <Route path="/detalle/:idProducto" element={<ItemDetailContainer />} />
+  <Route path="*" element={<div>Sitio no encontrado por favor vuelva</div>} />
   </Routes>
   </BrowserRouter>;
 }
